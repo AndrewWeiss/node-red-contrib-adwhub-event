@@ -1,0 +1,341 @@
+<script type="text/x-red" data-template-name="Do Save">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Do Save">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Do Update">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Do Update">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Do Event">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Do Event">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Do Cmd">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-device"><i class="fa fa-tag"></i> Device</label>
+        <input type="text" id="node-input-device" placeholder="Device">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sensor"><i class="fa fa-tag"></i> Sensor</label>
+        <input type="text" id="node-input-sensor" placeholder="Sensor">
+    </div>
+    <div class="form-row">
+        <label for="node-input-cmd"><i class="fa fa-tag"></i> Command</label>
+        <input type="text" id="node-input-cmd" placeholder="Command">
+    </div>
+    <div class="form-row">
+        <label for="node-input-arguments"><i class="fa fa-tag"></i> Arguments</label>
+    </div>
+    <div class="form-row">
+        <input type="text" height="100px" id="node-input-event" placeholder="Arguments">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Do Cmd">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Handle Save">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Handle Save">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Handle Update">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-device"><i class="fa fa-tag"></i> Device</label>
+        <input type="text" id="node-input-device" placeholder="Device">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sensor"><i class="fa fa-tag"></i> Sensor</label>
+        <input type="text" id="node-input-sensor" placeholder="Sensor">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Handle Update">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Handle Event">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-device"><i class="fa fa-tag"></i> Device</label>
+        <input type="text" id="node-input-device" placeholder="Device">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sensor"><i class="fa fa-tag"></i> Sensor</label>
+        <input type="text" id="node-input-sensor" placeholder="Sensor">
+    </div>
+    <div class="form-row">
+        <label for="node-input-event"><i class="fa fa-tag"></i> Event</label>
+        <input type="text" id="node-input-event" placeholder="Event">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Handle Event">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+<script type="text/x-red" data-template-name="Handle Cmd">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Handle Cmd">
+    <p>AdwTech IoT Event System</p>
+    <h3>Details</h3>
+    <p>...</p>
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  RED.nodes.registerType('Do Save', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            }
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "connections.png",
+        label: function () {
+            return this.name || "Do Save";
+        }
+    });
+
+    RED.nodes.registerType('Do Update', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            }
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "connections.png",
+        label: function () {
+            return this.name || "Do Update";
+        }
+    });
+
+    RED.nodes.registerType('Do Event', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            }
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "connections.png",
+        label: function () {
+            return this.name || "Do Event";
+        }
+    });
+
+    RED.nodes.registerType('Do Cmd', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            },
+            device: {
+                value: ""
+            },
+            sensor: {
+                value: ""
+            },
+            cmd: {
+                value: ""
+            },
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "connections.png",
+        label: function () {
+            if (this.name)
+                return this.name;
+            if (this.device && this.sensor && this.cmd)
+                return `Call ${this.device}.${this.sensor}.${this.cmd}`;
+                
+            return "Call Command";
+        }
+    });
+
+
+    RED.nodes.registerType('Handle Update', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            },
+            device: {
+                value: ""
+            },
+            sensor: {
+                value: ""
+            },
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "connections.png",
+        label: function () {
+            if (this.name)
+                return this.name;
+
+            if (this.device && this.sensor && this.event)
+                return `${this.device}.${this.sensor}.${this.event}`;
+
+            if (this.device && this.sensor)
+                return `${this.device}.${this.sensor}`;
+
+            if (this.event)
+                return `All ${this.event} Events`;
+
+            if (this.sensor)
+                return `All ${this.sensor} Sensor Updates`;
+
+            if (this.device)
+                return `All ${this.device} Device Updates`;
+
+            return "All Updates";
+        }
+    });
+
+  RED.nodes.registerType('Handle Save', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "connections.png",
+        label: function () {
+            return this.name || "Handle Save";
+        }
+    });
+
+    RED.nodes.registerType('Handle Event', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            },
+            device: {
+                value: ""
+            },
+            sensor: {
+                value: ""
+            },
+            event: {
+                value: ""
+            },
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "connections.png",
+        label: function () {
+            if (this.name)
+                return this.name;
+
+            if (this.device && this.sensor && this.event)
+                return `${this.device}.${this.sensor}.${this.event} Events`;
+
+            if (this.device && this.sensor)
+                return `${this.device}.${this.sensor}`;
+
+            if (this.event)
+                return `All ${this.event} Events`;
+
+            if (this.sensor)
+                return `All ${this.sensor} Sensor Events`;
+
+            if (this.device)
+                return `All ${this.device} Device Events`;
+
+            return "All Events";
+        }
+    });
+
+    RED.nodes.registerType('Handle Cmd', {
+        category: 'AdwTech',
+        color: '#C0DEED',
+        defaults: {
+            name: {
+                value: ""
+            }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "connections.png",
+        label: function () {
+            return this.name || "Handle Cmd";
+        }
+    });
+</script>

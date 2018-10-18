@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-adwhub-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "adwhub-event.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "adwhub-event": "adwhub-event.js"
+    }
+  }
+}
